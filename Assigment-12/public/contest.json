@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Design Challenge",
+        "tag": "CreativeDesign2023",
+        "img": "https://www.google.com/search?q=CreativeDesign2023+contest&oq=CreativeDesign2023+contest&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQIRgKGKAB0gEIODg3NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#vhid=pmLP8rcs68k0dM&vssid=l",
+        "participants": 50,
+        "status": "pending",
+        "description": "Showcase your creativity in our annual design challenge. Create unique designs and stand a chance to win exciting prizes!",
+        "timeToEnd": "2023-12-31T23:59:59Z",
+        "participantsList": [
+            "participant1@example.com",
+            "participant2@example.com",
+            "participant3@example.com"
+        ]
+    }
+]
