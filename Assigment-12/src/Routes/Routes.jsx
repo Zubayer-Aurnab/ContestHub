@@ -46,7 +46,7 @@ export const router = createBrowserRouter([
             {
                 path: '/contestDetail/:id',
                 element: <Private><ContestDetailPage /> </Private>,
-                loader: ({ params }) => fetch(`https://assigment-12-server-eta.vercel.app/single-contest/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/single-contest/${params.id}`)
             },
             {
                 path: '/allContest',
@@ -86,7 +86,7 @@ export const router = createBrowserRouter([
             {
                 path: 'updateContest/:id',
                 element: <UpdateContest />,
-                loader: ({ params }) => fetch(`https://assigment-12-server-eta.vercel.app/single-contest/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/single-contest/${params.id}`)
             },
             {
                 path: 'contestSubmitted',
@@ -104,7 +104,7 @@ export const router = createBrowserRouter([
             {
                 path: 'payment/:id',
                 element: <Payment />,
-                loader: ({ params }) => fetch(`https://assigment-12-server-eta.vercel.app/single-contest/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/single-contest/${params.id}`)
             },
             {
                 path: 'myRegisteredContest',

@@ -15,9 +15,14 @@ const BasicRoutes = () => {
                     Blog <FaBook className="text-base md:text-xl" />
                 </button>
             </Link>
-            <Link to={"/blog"} className="">
+            <Link to={"/allContest"} className="">
                 <button className="md:w-full text-[10px] font-thin md:font-bold md:text-sm  btn bg-primary0 text-white hover:bg-black">
                     All-Contest <GiTrophyCup className="text-base md:text-xl" />
+                </button>
+            </Link>
+            <Link to={"dashboardHome"} className="">
+                <button className="md:w-full text-[10px] font-thin md:font-bold md:text-sm  btn bg-primary0 text-white hover:bg-black">
+                    Dashboard Home 
                 </button>
             </Link>
         </>
