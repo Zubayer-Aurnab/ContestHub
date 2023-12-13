@@ -1,10 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
+import useAllContest from "../../../../Hooks/useAllContest";
 import useAuth from "../../../../Hooks/useAuth";
 import useAxiosSecure from "../../../../Hooks/useAxiosSecure";
-import useAllContest from "../../../../Hooks/useAllContest";
 
 
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
+import { Cell, Legend, Pie, PieChart, Tooltip } from 'recharts';
 
 
 
@@ -20,10 +20,10 @@ const UserHome = () => {
         },
     })
     console.log(myPayments, isPending)
-    const totalPrice = myPayments.reduce((total, item) => total + Number(item.price), 0)
+    const totalPrice = myPayments?.reduce((total, item) => total + Number(item.price), 0)
     console.log(totalPrice)
-    const totalContest = AllContest.length;
-    const yourContest = myPayments.length;
+    const totalContest = AllContest?.length;
+    const yourContest = myPayments?.length;
     const percentage = (yourContest / totalContest) * 100;
 
     const data = [
@@ -49,7 +49,7 @@ const UserHome = () => {
 
 
     return (
-        <div>
+        <div >
            
             <div className="lg:flex items-center">
                 <div className="flex-1 flex justify-center">
