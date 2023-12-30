@@ -11,7 +11,7 @@ const NavBar = () => {
             <NavLink
                 to="/"
                 className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "btn bg-primary0 text-primary4 hover:bg-black w-full" : "btn w-full text-primary4 hover:bg-primary0"
+                    isPending ? "pending" : isActive ? "btn btn-sm btn-outline bg-primary1 text-white" : "btn btn-sm   btn-outline"
                 }
             >
                 Home
@@ -21,7 +21,7 @@ const NavBar = () => {
             <NavLink
                 to="/blog"
                 className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "btn bg-primary0 text-primary4 hover:bg-black w-full" : "btn w-full text-primary4 hover:bg-primary0 "
+                    isPending ? "pending" : isActive ? "btn btn-sm btn-outline bg-primary1 text-white" : "btn btn-sm   btn-outline "
                 }
             >
                 blog
@@ -31,13 +31,26 @@ const NavBar = () => {
             <NavLink
                 to="/allContest"
                 className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "btn bg-primary0 text-primary4 hover:bg-black w-full" : "btn w-full text-primary4 hover:bg-primary0 "
+                    isPending ? "pending" : isActive ? "btn btn-sm btn-outline bg-primary1 text-white" : "btn btn-sm   btn-outline "
                 }
             >
                 All-Contest
             </NavLink>
         </li>
-       
+        {
+            user ?
+                <NavLink
+                    to="/dashboard"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "btn btn-sm btn-outline bg-primary1 text-white" : "btn btn-sm   btn-outline "
+                    }
+                >
+                    Dashboard
+                </NavLink>
+                :
+                ""
+        }
+
 
     </>
     return (
@@ -59,7 +72,7 @@ const NavBar = () => {
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className=" menu-horizontal px-1 border-4 rounded-2xl border-primary0 p-2 space-x-4 ">
+                <ul className=" menu-horizontal px-1  rounded-2xl  space-x-4 ">
                     {
                         navBarLinks
                     }

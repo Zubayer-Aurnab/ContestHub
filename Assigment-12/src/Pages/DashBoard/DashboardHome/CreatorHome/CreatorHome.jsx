@@ -96,7 +96,7 @@ const CreatorHome = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                                     </svg>
                                 </div>
-                                <div className="text-lg font-semibold mt-2">Your Contest</div>
+                                <div className="text-lg font-semibold mt-2"> Your Contest</div>
                                 <div className="text-xl font-bold mt-2">{myCreated?.length}</div>
 
                             </div>
@@ -109,7 +109,7 @@ const CreatorHome = () => {
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
                                     </svg>
                                 </div>
-                                <div className="text-lg font-semibold mt-2">TOTAL Spend</div>
+                                <div className="text-lg font-semibold mt-2">Total Winning</div>
                                 <div className="text-xl font-bold mt-2">{totalWinningPrice} $</div>
 
                             </div>
