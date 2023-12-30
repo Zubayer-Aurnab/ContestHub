@@ -146,11 +146,25 @@ async function run() {
       const result = await ContestCollection.find(query).toArray();
       res.send(result);
     });
-    //get all contest data
+    //get all contest data////////////////////////////////////////////////////
     app.get("/contest", async (req, res) => {
       const result = await ContestCollection.find().toArray();
       res.send(result);
     });
+    //getPagination
+    app.get("/pagination", async (req, res) => {
+      // let query = {};
+      const page = Number(req.query.page);
+      const size = Number(req.query.size);
+
+      const result = await ContestCollection.find()
+        .skip(page * size)
+        .limit(size)
+        .toArray();
+      const total = await ContestCollection.countDocuments();
+      res.send({result, total});
+    });
+
     //get contest data by searching
     app.get("/search", async (req, res) => {
       try {
