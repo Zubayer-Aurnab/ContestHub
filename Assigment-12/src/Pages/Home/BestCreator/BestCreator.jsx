@@ -30,7 +30,7 @@ const BestCreator = () => {
     return (
         <div className="mb-20">
 
-            <div className="mt-20">
+            <div className="my-20">
                 <Title>Best Creators</Title>
             </div>
             <div className="mt-10 w-4/5 mx-auto">
