@@ -23,7 +23,7 @@ const Timer = ({ targetDate, setTimeOut }) => {
 
         return () => clearInterval(timerInterval);
     }, [targetDate]);
-    console.log(timeRemaining)
+    // console.log(timeRemaining)
     if (timeRemaining.seconds < 0) {
         setTimeOut(true)
     }
@@ -32,10 +32,9 @@ const Timer = ({ targetDate, setTimeOut }) => {
         <div>
             <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
-                    <span className="countdown font-mono text-5xl">
-                       
-                        {timeRemaining.days}
-                    </span>
+                    <p className="countdown font-mono text-5xl">
+                        {timeRemaining.days > 0 ? timeRemaining.days : ""}
+                    </p>
                     days
                 </div>
                 <div className="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
@@ -57,7 +56,7 @@ const Timer = ({ targetDate, setTimeOut }) => {
                     sec
                 </div>
             </div>
-            
+
         </div>
     );
 };

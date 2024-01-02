@@ -32,9 +32,10 @@ const AllContest = () => {
                 setTotalContest(res.data.total)
 
             });
+        window.scrollTo(0, 0)
     }, [currentPage, itemsPerPage]);
-    console.log(AllContest)
-    console.log(totalContest, itemsPerPage)
+    // console.log(AllContest)
+    // console.log(totalContest, itemsPerPage)
     return (
         <div>
             <div className="mb-10 mt-16">
